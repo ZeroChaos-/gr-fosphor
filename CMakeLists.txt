@@ -8,7 +8,7 @@
 ########################################################################
 # Project setup
 ########################################################################
-cmake_minimum_required(VERSION 3.8)
+cmake_minimum_required(VERSION 3.10)
 project(gr-fosphor CXX C)
 include(GNUInstallDirs)
 enable_testing()
@@ -91,7 +91,7 @@ set(GR_PKG_LIBEXEC_DIR  ${GR_LIBEXEC_DIR}/${CMAKE_PROJECT_NAME})
 ########################################################################
 # Find boost
 ########################################################################
-find_package(Boost "1.65" COMPONENTS system chrono thread)
+find_package(Boost "1.65" COMPONENTS chrono thread)
 
 if(NOT Boost_FOUND)
     message(FATAL_ERROR "Boost required to compile gr-fosphor")
