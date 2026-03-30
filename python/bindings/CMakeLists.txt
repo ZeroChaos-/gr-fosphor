@@ -58,7 +58,7 @@ list(APPEND fosphor_python_files
     python_bindings.cc)
 
   list_cond_append(ENABLE_GLFW fosphor_python_files glfw_sink_c_python.cc)
-  list_cond_append(ENABLE_QT5  fosphor_python_files qt_sink_c_python.cc)
+  list_cond_append(ENABLE_QT fosphor_python_files qt_sink_c_python.cc)
 
 GR_PYBIND_MAKE(fosphor
    ../..
